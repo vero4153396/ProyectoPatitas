@@ -1,5 +1,5 @@
 import {GestureHandlerRootView} from 'react-native-gesture-handler'
-import { Slot, SplashScreen } from "expo-router";
+import { Slot, SplashScreen,Stack } from "expo-router";
 import React from "react";
 import {useFonts} from "expo-font";
 import { useEffect } from 'react';

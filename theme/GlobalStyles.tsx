@@ -77,7 +77,8 @@ export const GlobalStyles = StyleSheet.create({
         alignSelf:"center",
         width:200,
         height: 150,
-        flex:1
+        flex:1,
+        top:"-15%"
         
     },
     statusBar:{
@@ -115,7 +116,9 @@ export const GlobalStyles = StyleSheet.create({
     rememberButton:{
         backgroundColor:Colores.naranjaClaro,
         borderColor:Colores.azulClaro,
-        borderWidth:0.5
+        borderWidth:0.5,
+        width:"100%",
+        marginRight:1,
     },
     accederContainer:{
         margin:25,
@@ -126,6 +129,9 @@ export const GlobalStyles = StyleSheet.create({
         color:Colores.blancoMentira,
         borderRadius:30,
         fontFamily:"Poppins",
+        fontWeight:"bold",
+        fontSize:20,
+        paddingLeft:"40%"
     },
     accederTextContainer:{
         flexDirection:"row",
@@ -171,5 +177,8 @@ export const GlobalStyles = StyleSheet.create({
         alignSelf:"center",
         marginTop:20,
         marginBottom:20
+    },
+    buttonGenerico:{
+        backgroundColor:"red"
     }
 })

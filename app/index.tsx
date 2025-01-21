@@ -1,7 +1,9 @@
 import { GlobalStyles } from "@/theme/GlobalStyles";
-import { Redirect } from "expo-router";
+import { Redirect, Link } from "expo-router";
 import { View, Text, Image, Button, Alert } from "react-native";
 import { TextInput } from "react-native-gesture-handler";
+import { CustomButton } from "@/components/CustomButton";
+import { usePatitas } from "@/hooks/usePatitas";
 
 export default function Index() {
   return (
@@ -31,16 +33,16 @@ export default function Index() {
             <TextInput placeholder="Contraseña" style={GlobalStyles.inputText}></TextInput>
           </View>
           <View style={GlobalStyles.rememberContainer}>
-            <Button title="v" onPress={() => Alert.alert("aaaa")}></Button>
+            <CustomButton label='' tipo="remember" onPress={(usePatitas)}></CustomButton>
             <Text style={GlobalStyles.rememberText}>Recuérdame</Text>
           </View>
         </View>
 
 
         <View style={GlobalStyles.accederContainer}>
-          <Button title="Acceder" onPress={() => Alert.alert("acceder")}></Button>
+          <Link style={GlobalStyles.accederButton} href={"./inicioScreen"} >Acceder</Link>
           <View style={GlobalStyles.accederTextContainer}>
-            <Text style={GlobalStyles.accederText}>¿No tienes una cuenta?</Text>
+            <Link style={GlobalStyles.accederText}  href={"./registroScreen"} >¿No tienes una cuenta?</Link>
             <Text style={GlobalStyles.accederText}>¿Olvidaste la contraseña?</Text>
           </View>
         </View>
