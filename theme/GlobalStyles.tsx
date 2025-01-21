@@ -19,6 +19,9 @@ export const GlobalStyles = StyleSheet.create({
     titulo: {
         fontSize: 22
     },
+    tituloHazteParte:{
+        width:100,
+    },
     drawerUserContainer: {
         backgroundColor: 'indigo',
         justifyContent: 'center',
@@ -65,6 +68,12 @@ export const GlobalStyles = StyleSheet.create({
         flex:1,
         fontFamily:"Poppins"
     },
+    textoRegistrateEn:{
+        color: Colores.naranjaNormal,
+        alignSelf:"center",
+        fontFamily:"Wendy",
+        fontSize:20
+    },
     textoAccede:{
         width:"auto",
         height:80,
@@ -79,6 +88,21 @@ export const GlobalStyles = StyleSheet.create({
         height: 150,
         flex:1
         
+    },
+    perro:{
+        position: 'absolute',
+        top: -90,
+        right: 30,
+        width:170,
+        height: 200,
+        
+    },
+    gato:{
+        position: 'absolute',
+        top: -90,
+        left: 0,
+        width: 150,
+        height: 180,
     },
     statusBar:{
         backgroundColor:Colores.azulNormal
@@ -120,6 +144,17 @@ export const GlobalStyles = StyleSheet.create({
     accederContainer:{
         margin:25,
         flex:0.5
+    },
+    volverAlLoginContainer:{
+        flexDirection:"row",
+        alignSelf:"center",
+        width:"100%",
+        borderRadius:30,
+        borderColor:Colores.naranjaClaro,
+        borderWidth:0.5,
+        borderTopColor:Colores.azulClaro,
+        borderTopWidth:0.5,
+        bottom:0,
     },
     accederButton:{
         backgroundColor:Colores.azulOscuro,
@@ -171,5 +206,10 @@ export const GlobalStyles = StyleSheet.create({
         alignSelf:"center",
         marginTop:20,
         marginBottom:20
-    }
+    },
+    iconoInput:{
+        width:20,
+        height:20,
+        left: 0,
+    },
 })

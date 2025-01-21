@@ -1,9 +1,11 @@
 import { GlobalStyles } from "@/theme/GlobalStyles";
-import { Redirect } from "expo-router";
+import { useRouter, Redirect, Link } from "expo-router";
 import { View, Text, Image, Button, Alert } from "react-native";
 import { TextInput } from "react-native-gesture-handler";
 
-export default function Index() {
+export default function index() {
+  const router = useRouter(); 
+
   return (
     <View style={GlobalStyles.containerAzul}>
 
@@ -40,7 +42,7 @@ export default function Index() {
         <View style={GlobalStyles.accederContainer}>
           <Button title="Acceder" onPress={() => Alert.alert("acceder")}></Button>
           <View style={GlobalStyles.accederTextContainer}>
-            <Text style={GlobalStyles.accederText}>¿No tienes una cuenta?</Text>
+            <Link href={"/registroScreen"} style={GlobalStyles.accederText}>¿No tienes una cuenta?</Link>
             <Text style={GlobalStyles.accederText}>¿Olvidaste la contraseña?</Text>
           </View>
         </View>
