@@ -10,7 +10,8 @@ import { GlobalStyles } from '@/theme/GlobalStyles';
 export default function RootLayout() {
   //para cargar las fuentes les das un nombre y luego las utilizas
   const [loaded]=useFonts({
-      Poppins:require(`../assets/fonts/Poppins-Regular.ttf`)
+      Poppins:require(`../assets/fonts/Poppins-Regular.ttf`),
+      MoreSugar:require(`../assets/fonts/MoreSugar -Regular.ttf`)
   });
 
   useEffect(() => {

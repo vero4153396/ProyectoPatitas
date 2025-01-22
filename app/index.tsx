@@ -11,10 +11,7 @@ export default function Index() {
 
       <View style={GlobalStyles.textoLogin}>
         <View style={{ width: "100%" }}>
-          <Image source={require("../assets/images/LogIn/Logo2.png")} style={GlobalStyles.logo}></Image>
         </View>
-
-        <Image source={require("../assets/images/LogIn/TextTitulo.png")} style={GlobalStyles.textoTitulo}></Image>
       </View>
 
       <View style={GlobalStyles.containerBlanco}>
@@ -33,7 +30,7 @@ export default function Index() {
             <TextInput placeholder="Contraseña" style={GlobalStyles.inputText}></TextInput>
           </View>
           <View style={GlobalStyles.rememberContainer}>
-            <Pressable onPress={() => router.push("/registroScreen")}></Pressable>
+            <Pressable onPress={() => router.push("./registroScreen")}></Pressable>
             <Text style={GlobalStyles.rememberText}>Recuérdame</Text>
           </View>
         </View>
