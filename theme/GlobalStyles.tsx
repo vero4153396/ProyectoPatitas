@@ -20,7 +20,10 @@ export const GlobalStyles = StyleSheet.create({
         fontSize: 22
     },
     tituloHazteParte:{
-        width:100,
+        marginTop:40,
+        alignSelf:"center",
+        width:330,
+        height: 60,
     },
     drawerUserContainer: {
         backgroundColor: 'indigo',
@@ -53,25 +56,50 @@ export const GlobalStyles = StyleSheet.create({
     textoTitulo:{
         marginEnd:10,
         marginStart:10,
-        width:"auto",
-        height:80        
+        width:300,
+        height:90        
     },
     containerBlanco:{
         backgroundColor:Colores.blancoMentira,
         borderTopLeftRadius: 24,
         borderTopRightRadius: 24,
-        flex:3,
+        flex:2,
         paddingBottom:40
 
+    },
+    botonesRegistroContainer:{
+        flexDirection:"row",
+        gap: 40,
+        alignSelf:"center",
+    },
+    textoRegistrateCancelar:{
+        justifyContent:"center",
+        alignSelf:"center",
+        fontSize:15,
+        fontFamily:"Poppins",
+        color:Colores.blancoMentira,
+    },
+    botonRegistrarCancelar:{
+        width: 130,
+        height: 40,
+        color: Colores.blancoMentira,
+        backgroundColor: Colores.azulNormal,
+        borderRadius: 30,
+        justifyContent:"center",
     },
     textoLogin:{
         flex:1,
         fontFamily:"Poppins"
     },
+    registrateEnyTitulo:{
+        position:"absolute",
+        top:30,
+        alignSelf:"center",
+    },
     textoRegistrateEn:{
         color: Colores.naranjaNormal,
         alignSelf:"center",
-        fontFamily:"Wendy",
+        fontFamily:"Poppins",
         fontSize:20
     },
     textoAccede:{
@@ -93,21 +121,21 @@ export const GlobalStyles = StyleSheet.create({
         position: 'absolute',
         top: -90,
         right: 30,
-        width:170,
-        height: 200,
-        
+        width:150,
+        height: 150,
     },
     gato:{
         position: 'absolute',
         top: -90,
         left: 0,
-        width: 150,
-        height: 180,
+        width: 110,
+        height: 160,
     },
     statusBar:{
         backgroundColor:Colores.azulNormal
     },
     inputContainer:{
+        flexDirection:"row",
         backgroundColor:Colores.naranjaClaro,
         paddingHorizontal:15,
         paddingVertical:3,
@@ -118,8 +146,10 @@ export const GlobalStyles = StyleSheet.create({
         borderWidth:0.5
     },
     inputText:{
+        paddingStart: 10,
         fontSize:15,
-        fontFamily:"Poppins"
+        fontFamily:"Poppins",
+        alignSelf:"center",
     },
     datosContainer:{
         gap:20,
@@ -146,14 +176,18 @@ export const GlobalStyles = StyleSheet.create({
         flex:0.5
     },
     volverAlLoginContainer:{
+        marginTop:35,
         flexDirection:"row",
+        gap:40,
+        alignItems: "center",
+        justifyContent: "center",
         alignSelf:"center",
-        width:"100%",
+        width:"120%",
+        height: 60,
         borderRadius:30,
-        borderColor:Colores.naranjaClaro,
-        borderWidth:0.5,
-        borderTopColor:Colores.azulClaro,
-        borderTopWidth:0.5,
+        borderColor:Colores.azulOscuro,
+        backgroundColor: Colores.naranjaClaro,
+        borderWidth:1,
         bottom:0,
     },
     accederButton:{
@@ -167,9 +201,9 @@ export const GlobalStyles = StyleSheet.create({
         gap:"16%"
     },
     accederText:{
-        color:Colores.azulOscuro,
+        paddingTop:10,
+        color:Colores.azulNormal,
         fontSize:13,
-        fontWeight:"bold",
         textDecorationLine:"underline",
         fontFamily:"Poppins"
     },
@@ -208,8 +242,9 @@ export const GlobalStyles = StyleSheet.create({
         marginBottom:20
     },
     iconoInput:{
-        width:20,
-        height:20,
+        width:30,
+        height:30,
         left: 0,
+        alignSelf:"center",
     },
 })

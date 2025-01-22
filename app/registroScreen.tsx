@@ -1,22 +1,24 @@
 import { GlobalStyles } from "@/theme/GlobalStyles";
-import { useRouter, Redirect } from "expo-router";
+import { Link, useRouter, Redirect } from "expo-router";
 import { View, Text, Image, Button, Alert } from "react-native";
-import { TextInput } from "react-native-gesture-handler";
+import { Pressable, TextInput } from "react-native-gesture-handler";
 
 export default function registroScreen() {
-    const router = useRouter();
+  const router = useRouter();
 
   return (
     <View style={GlobalStyles.containerAzul}>
 
-<View style={GlobalStyles.textoLogin}>
+      <View style={GlobalStyles.textoLogin}>
         <View style={{ width: "100%" }}>
           <Image source={require("../assets/images/LogIn/Logo2.png")} style={GlobalStyles.logo}></Image>
         </View>
-        <Text style={GlobalStyles.textoRegistrateEn}>Registrate en</Text>
-        <Text style={[GlobalStyles.textoTitulo]}>
-          PetConnect
-        </Text>
+
+        <View style={GlobalStyles.registrateEnyTitulo}>
+          <Text style={GlobalStyles.textoRegistrateEn}>Registrate en</Text>
+          <Image source={require("../assets/images/Registro/TextTitulo.png")} style={[GlobalStyles.textoTitulo]}></Image>
+        </View>
+
       </View>
 
       <View style={GlobalStyles.containerBlanco}>
@@ -26,34 +28,41 @@ export default function registroScreen() {
 
 
         <Image source={require("../assets/images/Registro/Titulo2.png")} style={GlobalStyles.tituloHazteParte}></Image>
-        
+
         <View style={GlobalStyles.datosContainer}>
           <View style={GlobalStyles.inputContainer}>
+            <Image source={require("../assets/images/Registro/humano.png")} style={GlobalStyles.iconoInput}></Image>
             <TextInput placeholder="Nombre" style={GlobalStyles.inputText}></TextInput>
           </View>
           <View style={GlobalStyles.inputContainer}>
+          <Image source={require("../assets/images/Registro/mail.png")} style={GlobalStyles.iconoInput}></Image>
             <TextInput placeholder="Email" style={GlobalStyles.inputText}></TextInput>
           </View>
           <View style={GlobalStyles.inputContainer}>
+          <Image source={require("../assets/images/Registro/password.png")} style={GlobalStyles.iconoInput}></Image>
             <TextInput placeholder="Contraseña" style={GlobalStyles.inputText}></TextInput>
           </View>
           <View style={GlobalStyles.inputContainer}>
+          <Image source={require("../assets/images/Registro/ojo.png")} style={GlobalStyles.iconoInput}></Image>
             <TextInput placeholder="Repetir contraseña" style={GlobalStyles.inputText}></TextInput>
-          </View>
-          <View style={GlobalStyles.rememberContainer}>
-            <Button title="v" onPress={()=>Alert.alert("aaaa")}></Button>
-            <Text style={GlobalStyles.rememberText}>Recuérdame</Text>
           </View>
         </View>
 
 
         <View style={GlobalStyles.accederContainer}>
-          <Button title="Registrate" onPress={() => Alert.alert("Registrate")}></Button>
-          <Button title="Cancelar" onPress={()=>Alert.alert("cancela")}></Button>
-          
+          <View style={GlobalStyles.botonesRegistroContainer}>
+            <Pressable style={GlobalStyles.botonRegistrarCancelar} onPress={() => router.push("/inicioScreen")}>
+              <Text style={GlobalStyles.textoRegistrateCancelar}>Registrate</Text>
+            </Pressable>
+            <Pressable style={GlobalStyles.botonRegistrarCancelar} onPress={() => router.push("/")}>
+              <Text style={GlobalStyles.textoRegistrateCancelar}>Cancelar</Text>
+            </Pressable>
+          </View>
+
+
           <View style={GlobalStyles.volverAlLoginContainer}>
-            <Text style={GlobalStyles.accederText}>¿Tienes ya una cuenta?</Text>
-            <Text style={GlobalStyles.accederText}>Accede al refugio</Text>
+            <Link href={"/"} style={GlobalStyles.accederText}>¿Tienes ya una cuenta?</Link>
+            <Link href={"/"} style={GlobalStyles.accederText}>Accede al refugio</Link>
           </View>
         </View>
 
