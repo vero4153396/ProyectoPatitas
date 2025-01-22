@@ -1,11 +1,11 @@
 import { GlobalStyles } from "@/theme/GlobalStyles";
-import { Redirect, Link } from "expo-router";
+import { Redirect, Link, useRouter } from "expo-router";
 import { View, Text, Image, Button, Alert } from "react-native";
-import { TextInput } from "react-native-gesture-handler";
-import { CustomButton } from "@/components/CustomButton";
+import { Pressable, TextInput } from "react-native-gesture-handler";
 import { usePatitas } from "@/hooks/usePatitas";
 
 export default function Index() {
+  const router = useRouter();
   return (
     <View style={GlobalStyles.containerAzul}>
 
@@ -33,16 +33,16 @@ export default function Index() {
             <TextInput placeholder="Contraseña" style={GlobalStyles.inputText}></TextInput>
           </View>
           <View style={GlobalStyles.rememberContainer}>
-            <CustomButton label='' tipo="remember" onPress={(usePatitas)}></CustomButton>
+            <Pressable onPress={() => router.push("/registroScreen")}></Pressable>
             <Text style={GlobalStyles.rememberText}>Recuérdame</Text>
           </View>
         </View>
 
 
         <View style={GlobalStyles.accederContainer}>
-          <Link style={GlobalStyles.accederButton} href={"./inicioScreen"} >Acceder</Link>
+          <Pressable style={GlobalStyles.accederButton} onPress={() => router.push("./inicioScreen")} >Acceder</Pressable>
           <View style={GlobalStyles.accederTextContainer}>
-            <Link style={GlobalStyles.accederText}  href={"./registroScreen"} >¿No tienes una cuenta?</Link>
+            <Link style={GlobalStyles.accederText} href={"./registroScreen"} >¿No tienes una cuenta?</Link>
             <Text style={GlobalStyles.accederText}>¿Olvidaste la contraseña?</Text>
           </View>
         </View>
