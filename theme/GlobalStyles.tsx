@@ -53,6 +53,7 @@ export const GlobalStyles = StyleSheet.create({
         width:"auto",
         height:80        
     },
+    //login screen
     containerBlanco:{
         backgroundColor:Colores.blancoMentira,
         borderTopLeftRadius: 24,
@@ -178,7 +179,12 @@ export const GlobalStyles = StyleSheet.create({
         marginTop:20,
         marginBottom:20
     },
-    buttonGenerico:{
-        backgroundColor:"red"
+    //inicio screen
+    containerBlancoInicio:{
+        backgroundColor:Colores.blancoMentira,
+        borderTopLeftRadius: 2,
+        borderTopRightRadius: 2,
+        flex:3,
+        paddingBottom:40
     }
 })

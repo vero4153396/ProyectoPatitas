@@ -11,10 +11,9 @@ export default function Index() {
         <View style={GlobalStyles.containerAzul}>
             <View style={GlobalStyles.textoLogin}>
                 <View style={{ width: "100%" }}>
-                    <Image source={require("")} style={GlobalStyles.logo}></Image>
-                </View>
+                Petconnect
 
-                <Image source={require("")} style={GlobalStyles.textoTitulo}></Image>
+                </View>
             </View>
             <View style={GlobalStyles.containerBlanco}>
             </View>
