@@ -7,7 +7,8 @@ export const Colores={
     naranjaOscuro:"#FF7300",
     blancoMentira:"#F9F9F9",
     azulOscuro:"#092B44",
-    azulClaro:"#5385B0"
+    azulClaro:"#5385B0",
+    grisMentira:"#D9D9D9",
 }
 
 
@@ -41,11 +42,9 @@ export const GlobalStyles = StyleSheet.create({
         backgroundColor: Colores.azulNormal,
     },
     logo:{
-        width:40,
-        height:40,
-        top:"10%",
-        left:"85%",
-        marginBottom:30
+        width:80,
+        height:80,
+        marginEnd:"300%"
     },
     textoTitulo:{
         marginEnd:10,
@@ -181,10 +180,77 @@ export const GlobalStyles = StyleSheet.create({
     },
     //inicio screen
     containerBlancoInicio:{
-        backgroundColor:Colores.blancoMentira,
-        borderTopLeftRadius: 2,
-        borderTopRightRadius: 2,
+        backgroundColor:Colores.grisMentira,
         flex:3,
+        borderTopEndRadius:10,
+        borderTopStartRadius:10,
         paddingBottom:40
+    },
+    header:{
+        flexDirection:"row",
+        marginTop:"2%",
+        marginStart:"5%",
+        marginEnd:"5%",
+        fontFamily:"MoreSugar",
+        color:Colores.blancoMentira,
+        fontSize:75,
+        alignItems:"center",
+        gap:"10%"
+    },
+    flechaHeader:{
+
+    },
+    directorContainer:{
+        flexDirection:"column",
+        alignItems:"center",
+        fontFamily:"Poppins",
+        fontSize:36,
+        fontWeight:"bold",
+        color:Colores.blancoMentira
+    },
+    directorIdentificador:{
+        fontSize:24,
+        fontFamily:"Poppins",
+        color:Colores.naranjaClaro,
+        fontWeight:"normal",
+        marginTop:-10,
+        marginBottom:15
+    },
+    menuContainer:{
+        flexDirection:"column",
+        justifyContent:"space-evenly",
+        paddingStart:"5%",
+        paddingEnd:"5%",
+        paddingTop:"1%",
+        gap:"1%"
+
+    },
+    menuElemento:{
+        flexDirection:"row",
+        flex:1,
+        fontFamily:"Poppins",
+        fontSize:40,
+        color:Colores.azulNormal,
+        gap:"10%",
+        alignItems:"center"
+    }
+    ,
+    protectorasContainer:{
+        backgroundColor:Colores.azulNormal,
+        borderTopEndRadius:10,
+        borderTopStartRadius:10,
+        flexDirection:"column",
+        fontFamily:"Poppins",
+        fontSize:32,
+        color:Colores.blancoMentira,
+        fontWeight:"bold",
+        alignItems:"center",
+        paddingTop:"2%",
+        gap:0
+
+    },
+    protectorasImagenesContainer:{
+        flexDirection:"row",
+        flexWrap:"nowrap",
     }
 })
