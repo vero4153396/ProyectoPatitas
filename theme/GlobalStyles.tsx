@@ -5,46 +5,19 @@ export const Colores={
     naranjaClaro:"#FDB672",
     naranjaNormal:"#FD8A2B",
     naranjaOscuro:"#FF7300",
+    naranjaAnuncios:"#FDB066",
     blancoMentira:"#F9F9F9",
     azulOscuro:"#092B44",
     azulClaro:"#5385B0",
     grisMentira:"#D9D9D9",
+    azulDiscusion:"#B2C9DD"
 }
 
 
 export const GlobalStyles = StyleSheet.create({
-    containerCentrado: {
-        flex:1,
-        backgroundColor: "#ff0000",
-    },
-    titulo: {
-        fontSize: 22
-    },
-    drawerUserContainer: {
-        backgroundColor: 'indigo',
-        justifyContent: 'center',
-        alignItems: 'center',
-        marginHorizontal: 0,
-        marginBottom: 30,
-        height: 140,
-        borderRadius: 10,
-
-    },
-    drawerUserImg: {
-        width: 100, 
-        height: 100, 
-        alignSelf:'center', 
-        borderRadius: 50
-    },
-    
     containerAzul:{
         flex:2,
         backgroundColor: Colores.azulNormal,
-    },
-    logo:{
-        width:80,
-        height:80,
-        marginEnd:"300%"
     },
     textoTitulo:{
         marginEnd:10,
@@ -61,13 +34,18 @@ export const GlobalStyles = StyleSheet.create({
         paddingBottom:40
 
     },
-    textoLogin:{
+    containerTitulo:{
         flex:1,
-        fontFamily:"Poppins"
+        flexDirection:"column",
+        marginTop:"20%"
     },
+    logo:{
+        marginTop:"3%",
+        position:"absolute",
+        right:"3%"
+    }
+    ,
     textoAccede:{
-        width:"auto",
-        height:80,
         marginEnd:20,
         marginStart:20,
         marginTop:100
@@ -75,10 +53,8 @@ export const GlobalStyles = StyleSheet.create({
     gatoPerro:{
         position: 'absolute',
         alignSelf:"center",
-        width:200,
-        height: 150,
         flex:1,
-        top:"-15%"
+        top:"-20%"
         
     },
     statusBar:{
@@ -86,16 +62,15 @@ export const GlobalStyles = StyleSheet.create({
     },
     inputContainer:{
         backgroundColor:Colores.naranjaClaro,
-        paddingHorizontal:15,
-        paddingVertical:3,
-        borderRadius:30,
-        marginEnd:25,
-        marginStart:25,
+        paddingHorizontal:"5%",
+        paddingVertical:"3%",
+        borderRadius:100,
+        marginHorizontal:"5%",
         borderColor:Colores.azulClaro,
-        borderWidth:0.5
+        borderWidth:2
     },
     inputText:{
-        fontSize:15,
+        fontSize:30,
         fontFamily:"Poppins"
     },
     datosContainer:{
@@ -109,74 +84,88 @@ export const GlobalStyles = StyleSheet.create({
         flexDirection:"row"
     },
     rememberText:{
-        fontSize:13,
+        fontSize:22,
         fontWeight:"bold",
         fontFamily:"Poppins",
+        color:Colores.azulNormal,
+        marginLeft:"2%"
     },
     rememberButton:{
         backgroundColor:Colores.naranjaClaro,
-        borderColor:Colores.azulClaro,
-        borderWidth:0.5,
-        width:"100%",
-        marginRight:1,
+        borderColor:Colores.azulNormal,
+        borderWidth:2,
+        borderRadius:4,
+        width:"4%",
+        height:"75%",
+        marginLeft:"5%",
+        alignSelf:"center",
+        color:Colores.blancoMentira,
+        fontWeight: "bold",
+        opacity:0.5
     },
     accederContainer:{
         margin:25,
         flex:0.5
     },
     accederButton:{
-        backgroundColor:Colores.azulOscuro,
+        backgroundColor:Colores.azulNormal,
         color:Colores.blancoMentira,
-        borderRadius:30,
+        borderRadius:100,
         fontFamily:"Poppins",
         fontWeight:"bold",
-        fontSize:20,
-        paddingLeft:"40%"
+        fontSize:32,
+        alignContent:"center",
+        paddingVertical:"2%"
     },
     accederTextContainer:{
         flexDirection:"row",
-        gap:"16%"
+        gap:"25%"
     },
     accederText:{
-        color:Colores.azulOscuro,
-        fontSize:13,
+        color:Colores.azulNormal,
+        fontSize:20,
         fontWeight:"bold",
         textDecorationLine:"underline",
-        fontFamily:"Poppins"
+        fontFamily:"Poppins",
     },
     accesoRapidoContainer:{
         marginEnd:25,
         marginStart:30,
-        flex:0.5,
         flexDirection:"column"
     },
     accesoRapidoTexto:{
         fontFamily:"Poppins",
         fontWeight:"bold",
-        fontSize:11,
-        color:Colores.azulOscuro,
+        fontSize:22,
+        color:Colores.azulNormal,
     },
     accesoTextoContainer:{
         flexDirection:"row",
+        flexWrap:"nowrap",
+        backgroundColor:Colores.naranjaNormal
     },
     accesoLinea:{
         borderBottomColor: Colores.naranjaNormal,
-        height: 0.7,
+        height: 0.9,
         backgroundColor:Colores.naranjaNormal,
         width:"20%",
         alignSelf:"center",
-    },
-    accesoLogos:{
-        width:24,
-        height:24,
         
+    },
+    lineaI:{
+        marginRight:"-20%",
+        marginLeft:"10%"
+    },
+    lineaD:{
+        marginLeft:"-20%"
     },
     accesoLogosContainer:{
         flexDirection:"row",
-        gap:10,
-        alignSelf:"center",
+        gap:"10%",
+        alignItems:"center",
         marginTop:20,
-        marginBottom:20
+        marginBottom:20,
+        justifyContent:"center"
     },
     //inicio screen
     containerBlancoInicio:{
@@ -231,7 +220,6 @@ export const GlobalStyles = StyleSheet.create({
     menuElemento:{
         flexDirection:"row",
         flex:1,
-        
         gap:"10%",
         alignItems:"center"
     },
@@ -266,8 +254,8 @@ export const GlobalStyles = StyleSheet.create({
         marginStart:"5%",
         marginEnd:"5%",
         alignItems:"center",
-        justifyContent:"space-between",
-        gap:"8%"
+        justifyContent:"space-around",
+        paddingBottom:"5%"
     },
     headerComunidadTexto:{
         fontSize:36,
@@ -279,5 +267,96 @@ export const GlobalStyles = StyleSheet.create({
         borderTopEndRadius:10,
         borderTopStartRadius:10,
         flex:1
+    },
+    containerAnuncio:{
+        backgroundColor:Colores.naranjaAnuncios,
+        borderRadius:50,
+        flexDirection:"column",
+        padding:"5%",
+        marginTop:"5%",
+        marginHorizontal:"5%"
+    },
+    containerHeaderAnuncio:{
+        flexDirection:"row"
+    },
+    textoHeaderAnuncio:{
+        fontFamily:"Poppins",
+        fontSize:32,
+        color:Colores.azulNormal,
+
+    },
+    textoAnuncio:{
+        fontFamily:"Poppins",
+        fontSize:24,
+        color:Colores.azulNormal,
+        alignSelf:"center"
+    },
+    discusionContainer:{
+        marginHorizontal:"5%",
+        marginBottom:"2%",
+        marginTop:"5%",
+        flex:1
+    },
+    discusionTitulo:{
+        color:Colores.azulNormal,
+        fontWeight:"bold",
+        fontSize:32
+    },
+    scrollContainer:{
+        flexDirection:"column",
+        flex:1
+    },
+    scrollElemento:{
+        backgroundColor:Colores.azulDiscusion,
+        borderRadius:25,
+        paddingHorizontal:"7%",
+        paddingVertical:"5%",
+        marginBottom:"5%"                                                                                                                                                                                                          
+    },
+    elementoTexto:{
+        fontFamily:"Poppins",
+        fontSize:32,
+        fontWeight:"bold",
+        color:Colores.azulNormal
+
+    },
+    elementoBocadillo:{
+        opacity:1,
+        alignSelf:"center"
+    },
+    elementoNumero:{
+        fontFamily:"Poppins",
+        fontSize:48,
+        color:Colores.azulNormal
+    },
+    bocadilloContainer:{
+        justifyContent:"flex-end",
+        flexDirection:"row"
+    },
+    nuevaDiscusionContainer:{
+        backgroundColor:Colores.naranjaClaro,
+        flex:0.1,
+        flexDirection:"row",
+        borderRadius:30,
+        alignSelf:"flex-end",
+        paddingHorizontal:"5%",
+        marginTop:"3%",
+        width:216
+    },
+    masDiscusion:{
+        fontFamily:"Poppins",
+        fontSize:64,
+        color:Colores.blancoMentira,
+        alignSelf:"center",
+        margin:"1%",
+        fontWeight:"thin"
+
+    },
+    masDiscusionTexto:{
+        alignSelf:"center",
+        fontFamily:"Poppins",
+        fontSize:32,
+        color:Colores.blancoMentira
+
     }
 })

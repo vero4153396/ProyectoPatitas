@@ -2,7 +2,6 @@ import { GlobalStyles } from "@/theme/GlobalStyles";
 import { Redirect, Link, useRouter } from "expo-router";
 import { View, Text, Image, Button, Alert, Pressable } from "react-native";
 import { TextInput } from "react-native-gesture-handler";
-import { usePatitas } from "@/hooks/usePatitas";
 
 
 export default function Index() {
@@ -10,7 +9,7 @@ export default function Index() {
     return (
         <View style={GlobalStyles.containerAzul}>
             <View style={GlobalStyles.header}>
-                <Pressable onPress={() => router.push("./registroScreen")}>
+                <Pressable onPress={() => router.push("/")}>
                     <Image source={require("../../assets/images/Inicio/arrow-back-circle-outline.png")} ></Image>
                 </Pressable>
                 <Text style={GlobalStyles.headerTextoInicio}>
@@ -18,7 +17,7 @@ export default function Index() {
                 </Text>
 
 
-                <Image source={require("../../assets/images/LogIn/Logo2.png")} style={GlobalStyles.logo}></Image>
+                <Image source={require("../../assets/images/LogIn/Logo2.png")}></Image>
 
             </View>
             <View style={GlobalStyles.directorContainer}>
