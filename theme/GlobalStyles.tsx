@@ -8,7 +8,7 @@ export const Colores = {
     blancoMentira: "#F9F9F9",
     azulOscuro: "#092B44",
     azulClaro: "#5385B0",
-    grisClaro: "D9D9D9",
+    grisClaro: "#D9D9D9",
 }
 
 
@@ -357,6 +357,7 @@ export const GlobalStyles = StyleSheet.create({
         alignItems: "center",
     },
     inputTextDescribeSituacionTexto: {
+        width: "100%",
         fontSize: 14,
         fontFamily: "Poppins",
         textAlign: "left",
