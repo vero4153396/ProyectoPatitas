@@ -15,7 +15,7 @@ export default function refugioScreen() {
                     <Image source={require("../assets/images/PatitasRescate/arrowBack.png")} style={GlobalStyles.arrowBack}></Image>
                 </Pressable>
 
-                <Text style={GlobalStyles.tituloHeader}>Refugio de patitas</Text>
+                <Text style={GlobalStyles.tituloHeaderRefugio}>Refugio de patitas</Text>
 
                 <Image source={require("../assets/images/LogIn/Logo2.png")} style={GlobalStyles.logoHeader}></Image>
 
