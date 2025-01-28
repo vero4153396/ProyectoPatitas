@@ -1,53 +1,54 @@
-import { GlobalStyles } from "@/theme/GlobalStyles";
+import { Colores, GlobalStyles } from "@/theme/GlobalStyles";
 import { Link, useRouter, Redirect } from "expo-router";
-import { View, Text, Image, Button, Alert } from "react-native";
+import { View, Text, Image, Button, Alert, StatusBar } from "react-native";
 import { Pressable, TextInput } from "react-native-gesture-handler";
 
-export default function registroScreen() {
+export default function index() {
   const router = useRouter();
 
   return (
     <View style={GlobalStyles.containerAzul}>
+      <StatusBar backgroundColor={Colores.azulNormal}/>
 
       <View style={GlobalStyles.textoLogin}>
         <View style={{ width: "100%" }}>
-          <Image source={require("../assets/images/LogIn/Logo2.png")} style={GlobalStyles.logoRegistro}></Image>
+          <Image source={require("../../assets/images/LogIn/Logo2.png")} style={GlobalStyles.logoRegistro}></Image>
         </View>
 
         <View style={GlobalStyles.registrateEnyTitulo}>
           <Text style={GlobalStyles.textoRegistrateEn}>Registrate en</Text>
-          <Image source={require("../assets/images/Registro/TextTitulo.png")} style={[GlobalStyles.textoTitulo]}></Image>
+          <Image source={require("../../assets/images/Registro/TextTitulo.png")} style={[GlobalStyles.textoTitulo]}></Image>
         </View>
 
       </View>
 
       <View style={GlobalStyles.containerBlanco}>
-        <Image source={require("../assets/images/Registro/animales.png")} style={GlobalStyles.animales}></Image>
+        <Image source={require("../../assets/images/Registro/animales.png")} style={GlobalStyles.animales}></Image>
 
-        <Image source={require("../assets/images/Registro/Titulo2.png")} style={GlobalStyles.tituloHazteParte}></Image>
+        <Image source={require("../../assets/images/Registro/Titulo2.png")} style={GlobalStyles.tituloHazteParte}></Image>
 
         <View style={GlobalStyles.datosContainer}>
           <View style={GlobalStyles.inputContainer}>
-            <Image source={require("../assets/images/Registro/humano.png")} style={GlobalStyles.iconoInput}></Image>
+            <Image source={require("../../assets/images/Registro/humano.png")} style={GlobalStyles.iconoInput}></Image>
             <TextInput placeholder="Nombre" style={GlobalStyles.inputText}></TextInput>
           </View>
           <View style={GlobalStyles.inputContainer}>
-            <Image source={require("../assets/images/Registro/mail.png")} style={GlobalStyles.iconoInput}></Image>
+            <Image source={require("../../assets/images/Registro/mail.png")} style={GlobalStyles.iconoInput}></Image>
             <TextInput placeholder="Email" style={GlobalStyles.inputText}></TextInput>
           </View>
           <View style={GlobalStyles.inputContainer}>
-            <Image source={require("../assets/images/Registro/password.png")} style={GlobalStyles.iconoInput}></Image>
+            <Image source={require("../../assets/images/Registro/password.png")} style={GlobalStyles.iconoInput}></Image>
             <TextInput placeholder="Contraseña" style={GlobalStyles.inputText}></TextInput>
           </View>
           <View style={GlobalStyles.inputContainer}>
-            <Image source={require("../assets/images/Registro/ojo.png")} style={GlobalStyles.iconoInput}></Image>
+            <Image source={require("../../assets/images/Registro/ojo.png")} style={GlobalStyles.iconoInput}></Image>
             <TextInput placeholder="Repetir contraseña" style={GlobalStyles.inputText}></TextInput>
           </View>
         </View>
 
 
         <View style={GlobalStyles.botonesRegistroContainer}>
-          <Pressable style={GlobalStyles.botonRegistrarCancelar} onPress={() => router.push("/inicioScreen")}>
+          <Pressable style={GlobalStyles.botonRegistrarCancelar} onPress={() => router.push("./inicioScreen")}>
             <Text style={GlobalStyles.textoRegistrateCancelar}>Registrate</Text>
           </Pressable>
           <Pressable style={GlobalStyles.botonRegistrarCancelar} onPress={() => router.push("/")}>

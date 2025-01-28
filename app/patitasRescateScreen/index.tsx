@@ -1,22 +1,24 @@
-import { GlobalStyles } from "@/theme/GlobalStyles";
+import { Colores, GlobalStyles } from "@/theme/GlobalStyles";
 import { Link, useRouter, Redirect } from "expo-router";
-import { View, Text, Image, Button, Alert } from "react-native";
+import { View, Text, Image, Button, Alert, StatusBar } from "react-native";
 import { Pressable, TextInput } from "react-native-gesture-handler";
 
-export default function patitasRescateScreen() {
+export default function index() {
     const router = useRouter();
 
     return (
         <View style={GlobalStyles.containerAzulPatitasRescate}>
+            <StatusBar backgroundColor={Colores.blancoMentira}/>
+
             <View style={GlobalStyles.headerBlanco}>
 
-                <Pressable onPress={() => router.push("/inicioScreen")}>
-                    <Image source={require("../assets/images/PatitasRescate/arrowBack.png")} style={GlobalStyles.arrowBack}></Image>
+                <Pressable onPress={() => router.push("./inicioScreen")}>
+                    <Image source={require("../../assets/images/PatitasRescate/arrowBack.png")} style={GlobalStyles.arrowBack}></Image>
                 </Pressable>
 
                 <Text style={GlobalStyles.tituloHeader}>Patitas al rescate</Text>
 
-                <Image source={require("../assets/images/LogIn/Logo2.png")} style={GlobalStyles.logoHeader}></Image>
+                <Image source={require("../../assets/images/LogIn/Logo2.png")} style={GlobalStyles.logoHeader}></Image>
 
             </View>
 
@@ -28,10 +30,10 @@ export default function patitasRescateScreen() {
                 Indica el punto donde animal, una colonia o una situación requiere atención y descríbela para que podamos actuar juntos.
             </Text>
 
-            <Image source={require("../assets/images/PatitasRescate/mapa.png")} style={GlobalStyles.mapa}></Image>
+            <Image source={require("../../assets/images/PatitasRescate/mapa.png")} style={GlobalStyles.mapa}></Image>
 
             <View style={GlobalStyles.inputContainerBuscarUbicacion}>
-                <Image source={require("../assets/images/PatitasRescate/ubi.png")} style={GlobalStyles.iconoInputUbicacion}></Image>
+                <Image source={require("../../assets/images/PatitasRescate/ubi.png")} style={GlobalStyles.iconoInputUbicacion}></Image>
                 <TextInput placeholder="Buscar ubicación..." style={GlobalStyles.inputTextUbicacion}></TextInput>
             </View>
 
@@ -39,12 +41,12 @@ export default function patitasRescateScreen() {
                 <TextInput style={GlobalStyles.inputTextDescribeSituacionTexto} placeholder="Describe la situación aquí..."></TextInput>
                 <View style={GlobalStyles.botonesBottomPatitasContainer}>
                     <View style={GlobalStyles.circuloHuellaNaranja}>
-                        <Image source={require("../assets/images/PatitasRescate/huellaNaranja.png")} style={GlobalStyles.iconoInputHuellaNaranja} />
+                        <Image source={require("../../assets/images/PatitasRescate/huellaNaranja.png")} style={GlobalStyles.iconoInputHuellaNaranja} />
                     </View>
                     <View style={GlobalStyles.laUbicacionSeAnyadiraContainer}>
                         <Text style={GlobalStyles.laUbicacionSeAnyadiraText}>La ubicación se añadirá automáticamente cuando se seleccione en el mapa</Text>
                     </View>
-                    <Pressable style={GlobalStyles.botonEnviarPatitasContainer} onPress={() => router.push("/inicioScreen")}>
+                    <Pressable style={GlobalStyles.botonEnviarPatitasContainer} onPress={() => router.push("./inicioScreen")}>
                         <Text style={GlobalStyles.botonEnviarPatitasTexto}>ENVIAR</Text>
                     </Pressable>
                 </View>

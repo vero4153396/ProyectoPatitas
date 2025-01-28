@@ -1,36 +1,37 @@
-import { GlobalStyles } from "@/theme/GlobalStyles";
+import { Colores, GlobalStyles } from "@/theme/GlobalStyles";
 import { Link, useRouter, Redirect } from "expo-router";
-import { View, Text, Image, Button, Alert } from "react-native";
+import { View, Text, Image, Button, Alert, StatusBar } from "react-native";
 import { Pressable, ScrollView, TextInput } from "react-native-gesture-handler";
 
-export default function plutoScreen() {
+export default function index() {
     const router = useRouter();
 
     return (
         <View style={GlobalStyles.containerNaranjaPluto}>
+            <StatusBar backgroundColor={Colores.blancoMentira}/>
 
             <View style={GlobalStyles.headerBlanco}>
 
-                <Pressable onPress={() => router.push("/inicioScreen")}>
-                    <Image source={require("../assets/images/PatitasRescate/arrowBack.png")} style={GlobalStyles.arrowBack}></Image>
+                <Pressable onPress={() => router.push("./inicioScreen")}>
+                    <Image source={require("../../assets/images/PatitasRescate/arrowBack.png")} style={GlobalStyles.arrowBack}></Image>
                 </Pressable>
 
                 <Text style={GlobalStyles.tituloHeader}>Patitas al rescate</Text>
 
-                <Image source={require("../assets/images/LogIn/Logo2.png")} style={GlobalStyles.logoHeader}></Image>
+                <Image source={require("../../assets/images/LogIn/Logo2.png")} style={GlobalStyles.logoHeader}></Image>
 
             </View>
 
             <View style={GlobalStyles.containerBlancoPluto}>
-                <Image source={require("../assets/images/Refugio/pluto.png")} style={GlobalStyles.imagenPluto}></Image>
+                <Image source={require("../../assets/images/Refugio/pluto.png")} style={GlobalStyles.imagenPluto}></Image>
                 <Text style={GlobalStyles.nombrePluto}>Pluto</Text>
 
                 <View style={GlobalStyles.murciaCorazonContainer}>
                     <View style={GlobalStyles.ubiMurciaContainer}>
-                        <Image source={require("../assets/images/Pluto/ubi.png")}></Image>
+                        <Image source={require("../../assets/images/Pluto/ubi.png")}></Image>
                         <Text style={GlobalStyles.murcia}>Murcia</Text>
                     </View>
-                    <Image source={require("../assets/images/Pluto/corazon.png")} style={GlobalStyles.iconoCorazonPluto}></Image>
+                    <Image source={require("../../assets/images/Pluto/corazon.png")} style={GlobalStyles.iconoCorazonPluto}></Image>
                 </View>
 
                 <View style={GlobalStyles.datosPlutoContainer}>
@@ -51,16 +52,16 @@ export default function plutoScreen() {
                 </View>
 
                 <View style={GlobalStyles.informacionAnaContainer}>
-                    <Image source={require("../assets/images/Pluto/fotoAna.png")} style={GlobalStyles.imagenAna}></Image>
+                    <Image source={require("../../assets/images/Pluto/fotoAna.png")} style={GlobalStyles.imagenAna}></Image>
                     <View style={GlobalStyles.nombreNickAnaContainer}>
                         <Text style={GlobalStyles.nombreAna}>Ana</Text>
                         <Text style={GlobalStyles.nickAna}>PerrosAbandona2</Text>
                     </View>
                     <View style={GlobalStyles.contactoContainer}>
-                        <Image source={require("../assets/images/Pluto/telefono.png")}></Image>
+                        <Image source={require("../../assets/images/Pluto/telefono.png")}></Image>
                     </View>
                     <View style={GlobalStyles.contactoContainer}>
-                        <Image source={require("../assets/images/Pluto/chat.png")}></Image>
+                        <Image source={require("../../assets/images/Pluto/chat.png")}></Image>
                     </View>
                 </View>
 

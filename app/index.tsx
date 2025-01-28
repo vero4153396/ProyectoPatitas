@@ -42,7 +42,7 @@ export default function index() {
         <View style={GlobalStyles.accederContainer}>
           <Button title="Acceder" onPress={() => Alert.alert("acceder")}></Button>
           <View style={GlobalStyles.accederTextContainer}>
-            <Link href={"/registroScreen"} style={GlobalStyles.accederText}>¿No tienes una cuenta?</Link>
+            <Link href={"./registroScreen"} style={GlobalStyles.accederText}>¿No tienes una cuenta?</Link>
             <Text style={GlobalStyles.accederText}>¿Olvidaste la contraseña?</Text>
           </View>
         </View>
