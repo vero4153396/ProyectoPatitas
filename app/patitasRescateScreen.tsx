@@ -8,15 +8,15 @@ export default function patitasRescateScreen() {
 
     return (
         <View>
-            <View style={GlobalStyles.containerBlancoTitulo}>
+            <View style={GlobalStyles.headerBlanco}>
 
                 <Pressable onPress={() => router.push("/inicioScreen")}>
                     <Image source={require("../assets/images/PatitasRescate/arrowBack.png")} style={GlobalStyles.arrowBack}></Image>
                 </Pressable>
 
-                <Text style={GlobalStyles.tituloPatitasRescate}>Patitas al rescate</Text>
+                <Text style={GlobalStyles.tituloHeader}>Patitas al rescate</Text>
 
-                <Image source={require("../assets/images/LogIn/Logo2.png")} style={GlobalStyles.logo}></Image>
+                <Image source={require("../assets/images/LogIn/Logo2.png")} style={GlobalStyles.logoHeader}></Image>
 
             </View>
 
@@ -38,13 +38,20 @@ export default function patitasRescateScreen() {
                 </View>
 
                 <View style={GlobalStyles.inputContainerDescribeSituacion}>
-                    <TextInput style={GlobalStyles.inputTextDescribeSituacion}><Text style={GlobalStyles.inputTextDescribeSituacionTexto}>Describe la situación aquí...</Text></TextInput>
+                    <TextInput style={GlobalStyles.inputTextDescribeSituacionTexto} placeholder="Describe la situación aquí..."></TextInput>
                     <View style={GlobalStyles.botonesBottomPatitasContainer}>
-                        <View style={GlobalStyles.circuloHuellaNaranja}><Image source={require("../assets/images/PatitasRescate/huellaNaranja.png")} style={GlobalStyles.iconoInputHuellaNaranja}></Image></View>
-                        <View style={GlobalStyles.laUbicacionSeAnyadiraContainer}><Text style={GlobalStyles.laUbicacionSeAnyadiraText}>La ubicación se añadira automaticamente cuando se seleccione en el mapa</Text></View>
-                        <Pressable style={GlobalStyles.botonEnviarPatitasContainer} onPress={() => router.push("/inicioScreen")}><Text style={GlobalStyles.botonEnviarPatitasTexto}>ENVIAR</Text></Pressable>
+                        <View style={GlobalStyles.circuloHuellaNaranja}>
+                            <Image source={require("../assets/images/PatitasRescate/huellaNaranja.png")} style={GlobalStyles.iconoInputHuellaNaranja} />
+                        </View>
+                        <View style={GlobalStyles.laUbicacionSeAnyadiraContainer}>
+                            <Text style={GlobalStyles.laUbicacionSeAnyadiraText}>La ubicación se añadirá automáticamente cuando se seleccione en el mapa</Text>
+                        </View>
+                        <Pressable style={GlobalStyles.botonEnviarPatitasContainer} onPress={() => router.push("/inicioScreen")}>
+                            <Text style={GlobalStyles.botonEnviarPatitasTexto}>ENVIAR</Text>
+                        </Pressable>
                     </View>
                 </View>
+
 
             </View>
         </View>

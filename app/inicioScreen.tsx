@@ -7,7 +7,11 @@ export default function registroScreen() {
   const router = useRouter();
 
   return (
+    <View>
     <Pressable style={GlobalStyles.botonRegistrarCancelar} onPress={() => router.push("/patitasRescateScreen")}></Pressable>
+
+    <Pressable style={GlobalStyles.botonRegistrarCancelar} onPress={() => router.push("/refugioScreen")}></Pressable>
+    </View>
   );
 }
   
