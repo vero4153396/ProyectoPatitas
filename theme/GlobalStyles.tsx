@@ -191,18 +191,21 @@ export const GlobalStyles = StyleSheet.create({
         marginTop:"2%",
         marginStart:"5%",
         marginEnd:"5%",
+        alignItems:"center",
+        justifyContent:"space-between",
+        gap:"8%"
+    },
+    headerTextoInicio:{
         fontFamily:"MoreSugar",
         color:Colores.blancoMentira,
         fontSize:75,
-        alignItems:"center",
-        gap:"10%"
-    },
-    flechaHeader:{
-
     },
     directorContainer:{
         flexDirection:"column",
         alignItems:"center",
+    },
+    directorTexto:{
+        
         fontFamily:"Poppins",
         fontSize:36,
         fontWeight:"bold",
@@ -228,11 +231,14 @@ export const GlobalStyles = StyleSheet.create({
     menuElemento:{
         flexDirection:"row",
         flex:1,
+        
+        gap:"10%",
+        alignItems:"center"
+    },
+    menuElementoTexto:{
         fontFamily:"Poppins",
         fontSize:40,
         color:Colores.azulNormal,
-        gap:"10%",
-        alignItems:"center"
     }
     ,
     protectorasContainer:{
@@ -252,5 +258,26 @@ export const GlobalStyles = StyleSheet.create({
     protectorasImagenesContainer:{
         flexDirection:"row",
         flexWrap:"nowrap",
+    },
+    //comunidadScreen
+    headerComunidad:{
+        flexDirection:"row",
+        marginTop:"2%",
+        marginStart:"5%",
+        marginEnd:"5%",
+        alignItems:"center",
+        justifyContent:"space-between",
+        gap:"8%"
+    },
+    headerComunidadTexto:{
+        fontSize:36,
+        fontFamily:"MoreSugar",
+        color:Colores.blancoMentira,
+    },
+    comunidadContainerBlanco:{
+        backgroundColor:Colores.blancoMentira,
+        borderTopEndRadius:10,
+        borderTopStartRadius:10,
+        flex:1
     }
 })

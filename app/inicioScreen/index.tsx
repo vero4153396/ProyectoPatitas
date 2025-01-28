@@ -11,50 +11,72 @@ export default function Index() {
         <View style={GlobalStyles.containerAzul}>
             <View style={GlobalStyles.header}>
                 <Pressable onPress={() => router.push("./registroScreen")}>
-                    <Image source={require("../../assets/images/Inicio/arrow-back-circle-outline.png")} style={GlobalStyles.flechaHeader}></Image>
+                    <Image source={require("../../assets/images/Inicio/arrow-back-circle-outline.png")} ></Image>
                 </Pressable>
-                Petconnect
+                <Text style={GlobalStyles.headerTextoInicio}>
+                    Petconnect
+                </Text>
+
+
                 <Image source={require("../../assets/images/LogIn/Logo2.png")} style={GlobalStyles.logo}></Image>
 
             </View>
             <View style={GlobalStyles.directorContainer}>
                 <Image source={require("../../assets/images/Inicio/director1.png")} ></Image>
-                El Director
-                <View style={GlobalStyles.directorIdentificador}>
+                <Text style={GlobalStyles.directorTexto}>
+                    El Director
+                </Text>
+                <Text style={GlobalStyles.directorIdentificador}>
                     @el_boss
-                </View>
+                </Text>
+
             </View>
             <View style={GlobalStyles.containerBlancoInicio}>
                 <View style={GlobalStyles.menuContainer}>
                     <Pressable style={GlobalStyles.menuElemento} onPress={() => router.push("./inicioScreen")} >
                         <Image source={require("../../assets/images/Inicio/huellaPatitasAlRescate1.png")}></Image>
-                        Patitas al rescate
+                        <Text style={GlobalStyles.menuElementoTexto}>
+                            Patitas al rescate
+                        </Text>
+
                     </Pressable>
-                    <Pressable style={GlobalStyles.menuElemento} onPress={() => router.push("./inicioScreen")} >
+                    <Pressable style={GlobalStyles.menuElemento} onPress={() => router.push("./comunidadScreen")} >
                         <Image source={require("../../assets/images/Inicio/manosAgarrandoHuellita.png")}></Image>
-                        Comunidad animal
+                        <Text style={GlobalStyles.menuElementoTexto}>
+                            Comunidad animal
+                        </Text>
+
                     </Pressable>
                     <Pressable style={GlobalStyles.menuElemento} onPress={() => router.push("./inicioScreen")} >
                         <Image source={require("../../assets/images/Inicio/huellitasPatasEnMarcha.png")}></Image>
-                        Patas en marcha
+                        <Text style={GlobalStyles.menuElementoTexto}>
+                            Patas en marcha
+                        </Text>
+
                     </Pressable>
                     <Pressable style={GlobalStyles.menuElemento} onPress={() => router.push("./inicioScreen")} >
                         <Image source={require("../../assets/images/Inicio/lupa.png")}></Image>
-                        Sobre Petconnect
+                        <Text style={GlobalStyles.menuElementoTexto}>
+                            Sobre Petconnect
+                        </Text>
+
                     </Pressable>
                     <Pressable style={GlobalStyles.menuElemento} onPress={() => router.push("./inicioScreen")} >
                         <Image source={require("../../assets/images/Inicio/adoptMe.png")}></Image>
-                        Refugio de patitas
+                        <Text style={GlobalStyles.menuElementoTexto}>
+                            Refugio de patitas
+                        </Text>
+
                     </Pressable>
                 </View>
                 <View style={GlobalStyles.protectorasContainer}>
                     PROTECTORAS EN COLABORACIÓN
                     <View style={GlobalStyles.protectorasImagenesContainer}>
                         <Link href={"https://perrxsabandona2.wixsite.com/perrosabandona2/contacto"}>
-                        <Image source={require("../../assets/images/Inicio/logoProtectora11.png")}></Image>
+                            <Image source={require("../../assets/images/Inicio/logoProtectora11.png")}></Image>
                         </Link>
                         <Link href={"https://thelemondog.wordpress.com/contacto/"}>
-                        <Image source={require("../../assets/images/Inicio/logoProtectora21.png")}></Image>
+                            <Image source={require("../../assets/images/Inicio/logoProtectora21.png")}></Image>
                         </Link>
 
                     </View>
