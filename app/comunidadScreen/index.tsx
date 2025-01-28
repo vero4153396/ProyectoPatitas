@@ -1,6 +1,6 @@
-import { GlobalStyles } from "@/theme/GlobalStyles";
+import { Colores, GlobalStyles } from "@/theme/GlobalStyles";
 import { Redirect, Link, useRouter } from "expo-router";
-import { View, Text, Image, Button, Alert, Pressable } from "react-native";
+import { View, Text, Image, Button, Alert, Pressable, StatusBar } from "react-native";
 import { ScrollView, TextInput } from "react-native-gesture-handler";
 
 
@@ -15,6 +15,7 @@ export default function Index() {
     ];
     return (
         <View style={GlobalStyles.containerAzul}>
+            <StatusBar backgroundColor={Colores.azulNormal} />
             <View style={GlobalStyles.headerComunidad}>
                 <Pressable onPress={() => router.push("./inicioScreen")}>
                     <Image source={require("../../assets/images/Inicio/arrow-back-circle-outline.png")} ></Image>

@@ -27,9 +27,7 @@ export default function RootLayout() {
   
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <StatusBar 
-      backgroundColor={GlobalStyles.statusBar.backgroundColor} 
-    />
+      
       <Slot />
     </GestureHandlerRootView>
   );

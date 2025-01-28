@@ -1,6 +1,6 @@
 import { Colores, GlobalStyles } from "@/theme/GlobalStyles";
 import { Redirect, Link, useRouter } from "expo-router";
-import { View, Text, Image, Button, Alert } from "react-native";
+import { View, Text, Image, Button, Alert, StatusBar } from "react-native";
 import { Pressable, TextInput } from "react-native-gesture-handler";
 import { useState } from "react"; 
 
@@ -9,6 +9,7 @@ export default function Index() {
   const [isChecked, setIsChecked] = useState(false);
   return (
     <View style={GlobalStyles.containerAzul}>
+      <StatusBar backgroundColor={Colores.azulNormal} />
       <Image source={require("../assets/images/LogIn/Logo2.png")} style={GlobalStyles.logo}></Image>
 
       <View style={GlobalStyles.containerTitulo}>

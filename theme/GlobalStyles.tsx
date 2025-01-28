@@ -57,9 +57,6 @@ export const GlobalStyles = StyleSheet.create({
         top:"-20%"
         
     },
-    statusBar:{
-        backgroundColor:Colores.azulNormal
-    },
     inputContainer:{
         backgroundColor:Colores.naranjaClaro,
         paddingHorizontal:"5%",
