@@ -33,7 +33,7 @@ export default function Index() {
             </View>
             <View style={GlobalStyles.containerBlancoInicio}>
                 <View style={GlobalStyles.menuContainer}>
-                    <Pressable style={GlobalStyles.menuElemento} onPress={() => router.push("./inicioScreen")} >
+                    <Pressable style={GlobalStyles.menuElemento} onPress={() => router.push("./patitasRescateScreen")} >
                         <Image source={require("../../assets/images/Inicio/huellaPatitasAlRescate1.png")}></Image>
                         <Text style={GlobalStyles.menuElementoTexto}>
                             Patitas al rescate
@@ -47,21 +47,21 @@ export default function Index() {
                         </Text>
 
                     </Pressable>
-                    <Pressable style={GlobalStyles.menuElemento} onPress={() => router.push("./inicioScreen")} >
+                    <Pressable style={GlobalStyles.menuElemento}  >
                         <Image source={require("../../assets/images/Inicio/huellitasPatasEnMarcha.png")}></Image>
                         <Text style={GlobalStyles.menuElementoTexto}>
                             Patas en marcha
                         </Text>
 
                     </Pressable>
-                    <Pressable style={GlobalStyles.menuElemento} onPress={() => router.push("./inicioScreen")} >
+                    <Pressable style={GlobalStyles.menuElemento} >
                         <Image source={require("../../assets/images/Inicio/lupa.png")}></Image>
                         <Text style={GlobalStyles.menuElementoTexto}>
                             Sobre Petconnect
                         </Text>
 
                     </Pressable>
-                    <Pressable style={GlobalStyles.menuElemento} onPress={() => router.push("./inicioScreen")} >
+                    <Pressable style={GlobalStyles.menuElemento} onPress={() => router.push("./refugioScreen")} >
                         <Image source={require("../../assets/images/Inicio/adoptMe.png")}></Image>
                         <Text style={GlobalStyles.menuElementoTexto}>
                             Refugio de patitas
