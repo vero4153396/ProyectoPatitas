@@ -20,12 +20,6 @@ export const GlobalStyles = StyleSheet.create({
     titulo: {
         fontSize: 22
     },
-    tituloHazteParte: {
-        marginTop: 40,
-        alignSelf: "center",
-        width: 330,
-        height: 60,
-    },
     drawerUserContainer: {
         backgroundColor: 'indigo',
         justifyContent: 'center',
@@ -54,54 +48,9 @@ export const GlobalStyles = StyleSheet.create({
         height: 50,
         marginEnd: 10,
     },
-    textoTitulo: {
-        marginEnd: 10,
-        marginStart: 10,
-        width: 300,
-        height: 90
-    },
-    containerBlanco: {
-        backgroundColor: Colores.blancoMentira,
-        borderTopLeftRadius: 24,
-        borderTopRightRadius: 24,
-        flex: 2,
-        paddingBottom: 40
-
-    },
-    botonesRegistroContainer: {
-        flexDirection: "row",
-        gap: 40,
-        alignSelf: "center",
-    },
-    textoRegistrateCancelar: {
-        justifyContent: "center",
-        alignSelf: "center",
-        fontSize: 15,
-        fontFamily: "Poppins",
-        color: Colores.blancoMentira,
-    },
-    botonRegistrarCancelar: {
-        width: 130,
-        height: 40,
-        color: Colores.blancoMentira,
-        backgroundColor: Colores.azulNormal,
-        borderRadius: 30,
-        justifyContent: "center",
-    },
     textoLogin: {
         flex: 1,
         fontFamily: "Poppins"
-    },
-    registrateEnyTitulo: {
-        position: "absolute",
-        top: 30,
-        alignSelf: "center",
-    },
-    textoRegistrateEn: {
-        color: Colores.naranjaNormal,
-        alignSelf: "center",
-        fontFamily: "Poppins",
-        fontSize: 20
     },
     textoAccede: {
         width: "auto",
@@ -135,27 +84,6 @@ export const GlobalStyles = StyleSheet.create({
     statusBar: {
         backgroundColor: Colores.azulNormal
     },
-    inputContainer: {
-        flexDirection: "row",
-        backgroundColor: Colores.naranjaClaro,
-        paddingHorizontal: 15,
-        paddingVertical: 3,
-        borderRadius: 30,
-        marginEnd: 25,
-        marginStart: 25,
-        borderColor: Colores.azulClaro,
-        borderWidth: 0.5
-    },
-    inputText: {
-        paddingStart: 10,
-        fontSize: 15,
-        fontFamily: "Poppins",
-        alignSelf: "center",
-    },
-    datosContainer: {
-        gap: 20,
-        flex: 2
-    },
     rememberContainer: {
         marginEnd: 25,
         marginStart: 25,
@@ -172,25 +100,6 @@ export const GlobalStyles = StyleSheet.create({
         borderColor: Colores.azulClaro,
         borderWidth: 0.5
     },
-    accederContainer: {
-        margin: 25,
-        flex: 0.5
-    },
-    volverAlLoginContainer: {
-        marginTop: 35,
-        flexDirection: "row",
-        gap: 40,
-        alignItems: "center",
-        justifyContent: "center",
-        alignSelf: "center",
-        width: "120%",
-        height: 60,
-        borderRadius: 30,
-        borderColor: Colores.azulOscuro,
-        backgroundColor: Colores.naranjaClaro,
-        borderWidth: 1,
-        bottom: 0,
-    },
     accederButton: {
         backgroundColor: Colores.azulOscuro,
         color: Colores.blancoMentira,
@@ -200,13 +109,6 @@ export const GlobalStyles = StyleSheet.create({
     accederTextContainer: {
         flexDirection: "row",
         gap: "16%"
-    },
-    accederText: {
-        paddingTop: 10,
-        color: Colores.azulNormal,
-        fontSize: 13,
-        textDecorationLine: "underline",
-        fontFamily: "Poppins"
     },
     accesoRapidoContainer: {
         marginEnd: 25,
@@ -242,12 +144,126 @@ export const GlobalStyles = StyleSheet.create({
         marginTop: 20,
         marginBottom: 20
     },
-    iconoInput: {
-        width: 30,
-        height: 30,
-        left: 0,
+
+    // registroScreen
+    registrateEnyTitulo: {
+        flexDirection: "column",
+        alignSelf: "center",
+        marginTop: 85,
+    },
+    logoRegistro:{
+        position: "absolute",
+        top: 20,
+        right: 20,
+    },
+    textoRegistrateEn: {
+        color: Colores.naranjaNormal,
+        alignSelf: "center",
+        fontFamily: "Poppins",
+        fontSize: 36,
+        fontWeight: "bold",
+    },
+    textoTitulo: {
+        marginTop: -30,
+        width: 575,
+        height: 176,
         alignSelf: "center",
     },
+    containerBlanco: {
+        backgroundColor: Colores.blancoMentira,
+        borderTopLeftRadius: 60,
+        borderTopRightRadius: 60,
+        flex: 2,
+        paddingBottom: 40,
+    },
+    animales:{
+        width: 650,
+        height: 400,
+        top: -270,
+        left: -10,
+    },
+    tituloHazteParte: {
+        top: -270,
+        alignSelf: "center",
+        width: 717,
+        height: 122,
+    },
+    datosContainer: {
+        gap: 40,
+        flex: 2
+    },
+    inputContainer: {
+        top: -250,
+        width: 600,
+        height: 84,
+        alignSelf: "center",
+        flexDirection: "row",
+        backgroundColor: Colores.naranjaClaro,
+        paddingHorizontal: 15,
+        paddingVertical: 3,
+        borderRadius: 100,
+        gap: 30,
+    },
+    iconoInput: {
+        left: 10,
+        alignSelf: "center",
+    },
+    inputText: {
+        fontSize: 35,
+        fontFamily: "Poppins",
+        color: Colores.azulNormal,
+    },
+    accederContainer: {
+        margin: 25,
+        flex: 0.5
+    },
+    botonesRegistroContainer: {
+        width: 600,
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignSelf: "center",
+    },
+    botonRegistrarCancelar: {
+        width: 280,
+        height: 83,
+        color: Colores.blancoMentira,
+        backgroundColor: Colores.azulNormal,
+        borderRadius: 100,
+        justifyContent: "center",
+        alignItems : "center",
+    },
+    textoRegistrateCancelar: {
+        fontSize: 30,
+        fontFamily: "Poppins",
+        fontWeight: "bold",
+        color: Colores.blancoMentira,
+    },
+    volverAlLoginContainer: {
+        bottom: -40,
+        width: 720,
+        height: 70,
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-around",
+        borderTopLeftRadius: 34,
+        borderTopRightRadius: 34,
+        borderColor: Colores.azulOscuro,
+        backgroundColor: Colores.naranjaClaro,
+        borderWidth: 1,
+    },
+    tienesCuentaText:{
+        color: Colores.azulNormal,
+        fontSize: 24,
+        fontFamily: "Poppins"
+    },
+    accederText: {
+        color: Colores.azulNormal,
+        fontSize: 24,
+        fontWeight: "bold",
+        textDecorationLine: "underline",
+        fontFamily: "Poppins"
+    },
+
     // patitasRescateScreen
     headerBlanco: {
         height: 139,
@@ -725,6 +741,4 @@ export const GlobalStyles = StyleSheet.create({
         color: Colores.blancoMentira,
     }
        
-    
-    
 })
