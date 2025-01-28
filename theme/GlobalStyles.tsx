@@ -345,8 +345,7 @@ export const GlobalStyles = StyleSheet.create({
         borderColor: Colores.azulOscuro,
         borderWidth: 0.5,
         alignSelf: "center",
-        alignItems: "center",
-        gap: "70%",
+        justifyContent: "space-between",
     },
     inputTextDescribeSituacionTexto: {
         width: "100%",
@@ -356,12 +355,12 @@ export const GlobalStyles = StyleSheet.create({
         color: Colores.azulNormal,
     },
     botonesBottomPatitasContainer: {
-        width: "95%",
-        height: "100%",
         flexDirection: "row",
-        gap: 5,
+        gap: 20,
         alignSelf: "center",
-        justifyContent: "space-between",
+        alignItems: "center",
+        justifyContent: "space-around",
+        marginBottom: 10,
     },
     circuloHuellaNaranja: {
         width: 63,
