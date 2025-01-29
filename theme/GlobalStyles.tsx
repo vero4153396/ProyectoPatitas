@@ -69,11 +69,13 @@ export const GlobalStyles = StyleSheet.create({
         borderRadius:100,
         marginHorizontal:"5%",
         borderColor:Colores.azulClaro,
-        borderWidth:2
+        borderWidth:2,
+        flexDirection:"row",
+        justifyContent:"space-between"
     },
     inputText:{
         fontSize:30,
-        fontFamily:"Poppins"
+        fontFamily:"Poppins",
     },
     datosContainer:{
         gap:20,

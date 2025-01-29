@@ -31,6 +31,7 @@ export default function Index() {
           </View>
           <View style={GlobalStyles.inputContainer}>
             <TextInput placeholder="Contraseña" placeholderTextColor={Colores.azulNormal} style={GlobalStyles.inputText}></TextInput>
+            <Image source={require("../assets/images/LogIn/eye-off-outline.png")} ></Image>
           </View>
           <View style={GlobalStyles.rememberContainer}>
             <View  style={GlobalStyles.rememberButton}>

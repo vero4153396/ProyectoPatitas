@@ -12,8 +12,8 @@ export default function index() {
 
             <View style={GlobalStyles.headerBlanco}>
 
-                <Pressable  onPress={() => router.push("./inicioScreen")}>
-                    <Image source={require("../../assets/images/PatitasRescate/arrowBack.png")} style={GlobalStyles.arrowBack}></Image>
+                <Pressable onPress={() => router.push("./inicioScreen")}>
+                    <Image source={require("../../assets/images/Inicio/arrow-back-circle-outline.png")} ></Image>
                 </Pressable>
 
                 <Text style={GlobalStyles.tituloHeader}>Patitas al rescate</Text>
