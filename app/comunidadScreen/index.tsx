@@ -17,20 +17,20 @@ export default function Index() {
         <View style={GlobalStyles.containerAzul}>
             <StatusBar backgroundColor={Colores.azulNormal} />
             <View style={GlobalStyles.headerComunidad}>
-                <Pressable onPress={() => router.push("./inicioScreen")}>
-                    <Image source={require("../../assets/images/Inicio/arrow-back-circle-outline.png")} ></Image>
+                <Pressable onPress={() => router.push("./inicioScreen")} >
+                    <Image source={require("../../assets/images/Inicio/arrow-back-circle-outline.png")} style={GlobalStyles.arrowBack}></Image>
                 </Pressable>
                 <Text style={GlobalStyles.headerComunidadTexto} >
                     COMUNIDAD ANIMAL
                 </Text>
-                <Image source={require("../../assets/images/LogIn/Logo2.png")} ></Image>
+                <Image source={require("../../assets/images/LogIn/Logo2.png")} style={GlobalStyles.logoHeader}></Image>
 
             </View>
             <View style={GlobalStyles.comunidadContainerBlanco}>
                 <View style={GlobalStyles.containerAnuncio}>
                     <View style={GlobalStyles.containerHeaderAnuncio}>
-                        <Image source={require("../../assets/images/Comunidad/calendario1.png")} ></Image>
-                        <Text style={GlobalStyles.textoHeaderAnuncio}>PATITAS EN MARCHA (evento)</Text>
+                        <Image source={require("../../assets/images/Comunidad/calendario1.png")} style={GlobalStyles.calendarioEvento}></Image>
+                        <Text style={GlobalStyles.textoHeaderAnuncio}>PATITAS EN MARCHA (eventos)</Text>
                     </View>
                     <Text style={GlobalStyles.textoAnuncio}>
                         Descubre eventos solidarios creados por la

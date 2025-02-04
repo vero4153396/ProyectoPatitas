@@ -13,7 +13,7 @@ export default function Index() {
       <Image source={require("../assets/images/LogIn/Logo2.png")} style={GlobalStyles.logo}></Image>
 
       <View style={GlobalStyles.containerTitulo}>
-        <Image source={require("../assets/images/LogIn/TextTitulo.png")} style={GlobalStyles.gatoPerro}></Image>
+        <Image source={require("../assets/images/LogIn/TextTitulo.png")} style={GlobalStyles.loginTituloImagen}></Image>
 
       </View>
 
@@ -31,7 +31,7 @@ export default function Index() {
           </View>
           <View style={GlobalStyles.inputContainer}>
             <TextInput placeholder="Contraseña" placeholderTextColor={Colores.azulNormal} style={GlobalStyles.inputText}></TextInput>
-            <Image source={require("../assets/images/LogIn/eye-off-outline.png")} ></Image>
+            <Image source={require("../assets/images/LogIn/eye-off-outline.png")}  style={GlobalStyles.inputPasswordOjo}></Image>
           </View>
           <View style={GlobalStyles.rememberContainer}>
             <View  style={GlobalStyles.rememberButton}>
@@ -44,7 +44,7 @@ export default function Index() {
 
 
         <View style={GlobalStyles.accederContainer}>
-          <Pressable style={GlobalStyles.accederButton} onPress={() => router.push("./inicioScreen")} >Acceder</Pressable>
+          <Pressable style={GlobalStyles.accederButton} onPress={() => router.push("./inicioScreen")} ><Text style={GlobalStyles.accederButtomText}>Acceder</Text></Pressable>
           <View style={GlobalStyles.accederTextContainer}>
             <Link style={GlobalStyles.accederText} href={"./registroScreen"} >¿No tienes una cuenta?</Link>
             <Text style={GlobalStyles.accederText}>¿Olvidaste la contraseña?</Text>
@@ -62,9 +62,9 @@ export default function Index() {
             <View style={[GlobalStyles.accesoLinea,GlobalStyles.lineaD]}></View>
           </View>
           <View style={GlobalStyles.accesoLogosContainer}>
-            <Image source={require("../assets/images/LogIn/LogoGoogle.png")} ></Image>
-            <Image source={require("../assets/images/LogIn/LogoFacebook.png")}></Image>
-            <Image source={require("../assets/images/LogIn/LogoTwitter.png")} ></Image>
+            <Image source={require("../assets/images/LogIn/LogoGoogle.png")} style={GlobalStyles.accesoRapidoFoto} ></Image>
+            <Image source={require("../assets/images/LogIn/LogoFacebook.png")} style={GlobalStyles.accesoRapidoFoto}></Image>
+            <Image source={require("../assets/images/LogIn/LogoTwitter.png")} style={GlobalStyles.accesoRapidoFoto}></Image>
 
           </View>
 

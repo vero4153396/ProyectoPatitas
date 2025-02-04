@@ -13,7 +13,7 @@ export default function index() {
             <View style={GlobalStyles.headerBlanco}>
 
                 <Pressable onPress={() => router.push("./inicioScreen")}>
-                    <Image source={require("../../assets/images/Inicio/arrow-back-circle-outline.png")} ></Image>
+                    <Image source={require("../../assets/images/Inicio/arrow-back-circle-outline.png")} style={GlobalStyles.arrowBack}></Image>
                 </Pressable>
 
                 <Text style={GlobalStyles.tituloHeader}>Patitas al rescate</Text>
