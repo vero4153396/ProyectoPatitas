@@ -28,7 +28,7 @@ export default function index() {
 
                 <View style={GlobalStyles.murciaCorazonContainer}>
                     <View style={GlobalStyles.ubiMurciaContainer}>
-                        <Image source={require("../../assets/images/Pluto/ubi.png")}></Image>
+                        <Image source={require("../../assets/images/Pluto/ubi.png")} style={GlobalStyles.ubiPluto}></Image>
                         <Text style={GlobalStyles.murcia}>Murcia</Text>
                     </View>
                     <Image source={require("../../assets/images/Pluto/corazon.png")} style={GlobalStyles.iconoCorazonPluto}></Image>
@@ -58,10 +58,10 @@ export default function index() {
                         <Text style={GlobalStyles.nickAna}>PerrosAbandona2</Text>
                     </View>
                     <View style={GlobalStyles.contactoContainer}>
-                        <Image source={require("../../assets/images/Pluto/telefono.png")}></Image>
+                        <Image source={require("../../assets/images/Pluto/telefono.png")} style={GlobalStyles.iconoContacto}></Image>
                     </View>
                     <View style={GlobalStyles.contactoContainer}>
-                        <Image source={require("../../assets/images/Pluto/chat.png")}></Image>
+                        <Image source={require("../../assets/images/Pluto/chat.png")} style={GlobalStyles.iconoContacto}></Image>
                     </View>
                 </View>
 

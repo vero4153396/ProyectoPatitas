@@ -30,19 +30,19 @@ export default function index() {
         <View style={GlobalStyles.datosContainerRegistro}>
           <View style={GlobalStyles.inputContainerRegistro}>
             <Image source={require("../../assets/images/Registro/humano.png")} style={GlobalStyles.iconoInput}></Image>
-            <TextInput placeholder="Nombre" style={GlobalStyles.inputTextRegistro}></TextInput>
+            <TextInput placeholder="Nombre" placeholderTextColor={Colores.azulNormal} style={GlobalStyles.inputTextRegistro}></TextInput>
           </View>
           <View style={GlobalStyles.inputContainerRegistro}>
             <Image source={require("../../assets/images/Registro/mail.png")} style={GlobalStyles.iconoInput}></Image>
-            <TextInput placeholder="Email" style={GlobalStyles.inputTextRegistro}></TextInput>
+            <TextInput placeholder="Email" placeholderTextColor={Colores.azulNormal} style={GlobalStyles.inputTextRegistro}></TextInput>
           </View>
           <View style={GlobalStyles.inputContainerRegistro}>
             <Image source={require("../../assets/images/Registro/password.png")} style={GlobalStyles.iconoInput}></Image>
-            <TextInput placeholder="Contraseña" style={GlobalStyles.inputTextRegistro}></TextInput>
+            <TextInput placeholder="Contraseña" placeholderTextColor={Colores.azulNormal} style={GlobalStyles.inputTextRegistro}></TextInput>
           </View>
           <View style={GlobalStyles.inputContainerRegistro}>
             <Image source={require("../../assets/images/Registro/ojo.png")} style={GlobalStyles.iconoInput}></Image>
-            <TextInput placeholder="Repetir contraseña" style={GlobalStyles.inputTextRegistro}></TextInput>
+            <TextInput placeholder="Repetir contraseña" placeholderTextColor={Colores.azulNormal} style={GlobalStyles.inputTextRegistro}></TextInput>
           </View>
         </View>
 
@@ -59,7 +59,7 @@ export default function index() {
 
         <View style={GlobalStyles.volverAlLoginContainer}>
           <Link href={"/"} style={GlobalStyles.tienesCuentaText}>¿Tienes ya una cuenta?</Link>
-          <Link href={"/"} style={GlobalStyles.accederText}>Accede al refugio</Link>
+          <Link href={"/"} style={GlobalStyles.accederTextRegistro}>Accede al refugio</Link>
         </View>
 
       </View>
